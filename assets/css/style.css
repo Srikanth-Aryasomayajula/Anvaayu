@@ -501,7 +501,7 @@ textarea {
 }
 
 .access-row b {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .access-row small {
@@ -558,7 +558,7 @@ textarea {
   border-radius: 7px;
   background: #f5f8ee;
   color: var(--ink);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 700;
   box-shadow: 0 12px 30px #081b1b55;
 }
@@ -792,7 +792,7 @@ textarea {
   border: 1px solid #e2e8dd;
   box-shadow: 0 5px 15px #193d2a0c;
   border-radius: 4px;
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 700;
 }
 
