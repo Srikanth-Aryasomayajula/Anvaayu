@@ -10,7 +10,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/temporary-surprise.css">
   <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/temporary-surprise.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -78,5 +80,68 @@
   </main>
 
   <footer class="site-footer"><div class="container footer-main"><a class="brand brand-footer" href="index.html"><span class="brand-mark">a</span><span>anvaayu<span class="brand-dot">.</span></span></a><p>Identity. Access. Confidence.</p><div class="footer-links"><a href="services.html">Services</a><a href="team.html">Our team</a><a href="contact.html">Contact</a></div></div><div class="container footer-bottom"><span>© <span data-year></span> Anvaayu. All rights reserved.</span><span>Identity & Access Management services</span></div></footer>
+  
+
+<!-- Temporary Anvaayu founder surprise -->
+<div
+  class="surprise-overlay"
+  id="founder-surprise"
+  hidden
+>
+  <section
+    class="surprise-card"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="surprise-title"
+    aria-describedby="surprise-message"
+  >
+    <button
+      class="surprise-close"
+      type="button"
+      aria-label="Close surprise"
+    >
+      &times;
+    </button>
+
+    <div class="surprise-art" aria-hidden="true">
+      <span class="surprise-spark spark-one">✦</span>
+      <span class="surprise-spark spark-two">✧</span>
+      <span class="surprise-spark spark-three">✦</span>
+      <div class="surprise-sun"></div>
+      <div class="surprise-plant">🌱</div>
+    </div>
+
+    <p class="surprise-eyebrow">A little note for the founders</p>
+
+    <h2 id="surprise-title">
+      Congratulations on your first baby!
+    </h2>
+
+    <p id="surprise-message" class="surprise-message">
+      Every great journey starts with an idea, a little courage,
+      and the people who believe in it.
+    </p>
+
+    <p class="surprise-wish">
+      Here's to Anvaayu — may this be the beginning of something
+      extraordinary, filled with growth, meaningful work and success.
+    </p>
+
+    <div class="surprise-signoff">
+      <span class="surprise-signoff-line"></span>
+      <span>Rooting for Anvaayu</span>
+      <span class="surprise-signoff-line"></span>
+    </div>
+
+    <button class="button button-dark surprise-cta" type="button">
+      Celebrate Anvaayu <span aria-hidden="true">↗</span>
+    </button>
+
+    <p class="surprise-footer">Made with good wishes 💚</p>
+  </section>
+</div>
+<!-- End temporary Anvaayu founder surprise -->
+
+  
 </body>
 </html>

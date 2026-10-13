@@ -1,0 +1,253 @@
+
+/* =========================================================
+   ANVAAYU — TEMPORARY FOUNDER SURPRISE
+   Safe to remove when the surprise is no longer needed.
+   ========================================================= */
+
+.surprise-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 22px;
+  background: rgba(8, 28, 27, 0.76);
+  backdrop-filter: blur(7px);
+  overflow-y: auto;
+  animation: surprise-fade-in 0.35s ease both;
+}
+
+.surprise-overlay[hidden] {
+  display: none;
+}
+
+.surprise-card {
+  position: relative;
+  width: min(100%, 490px);
+  padding: 38px 42px 30px;
+  background: #f8f9f5;
+  color: #102b2b;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 28px 100px rgba(0, 0, 0, 0.28);
+  text-align: center;
+  animation: surprise-rise-in 0.5s ease both;
+}
+
+.surprise-close {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #dfe6df;
+  border-radius: 50%;
+  background: transparent;
+  color: #647674;
+  font-size: 25px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.surprise-close:hover {
+  background: #e9f2e9;
+  color: #102b2b;
+}
+
+.surprise-close:focus-visible,
+.surprise-cta:focus-visible {
+  outline: 3px solid #91a52f;
+  outline-offset: 4px;
+}
+
+/* Decorative plant illustration */
+
+.surprise-art {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 145px;
+  margin: 0 auto 24px;
+  overflow: hidden;
+  border-radius: 10px;
+  background:
+    radial-gradient(circle at 50% 100%, #d9e8cb 0, transparent 55%),
+    linear-gradient(145deg, #e9f2e9, #f3f5e9);
+}
+
+.surprise-sun {
+  position: absolute;
+  top: 22px;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: #d9f36a;
+  opacity: 0.8;
+}
+
+.surprise-plant {
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+  font-size: 66px;
+  line-height: 1;
+  filter: drop-shadow(0 7px 6px rgba(16, 43, 43, 0.1));
+}
+
+.surprise-spark {
+  position: absolute;
+  z-index: 2;
+  color: #748a32;
+}
+
+.spark-one {
+  top: 25px;
+  left: 25%;
+  font-size: 22px;
+}
+
+.spark-two {
+  top: 48px;
+  right: 23%;
+  font-size: 25px;
+}
+
+.spark-three {
+  bottom: 22px;
+  right: 31%;
+  font-size: 15px;
+}
+
+/* Message typography */
+
+.surprise-eyebrow {
+  margin: 0 0 12px;
+  color: #72852e;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.surprise-card h2 {
+  margin: 0 auto 17px;
+  max-width: 390px;
+  font: 800 clamp(27px, 5vw, 36px) / 1.2 "Manrope", sans-serif;
+  letter-spacing: -1.2px;
+}
+
+.surprise-message {
+  margin: 0 auto 14px;
+  max-width: 365px;
+  color: #425b53;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.surprise-wish {
+  margin: 0 auto;
+  max-width: 365px;
+  color: #647674;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.surprise-signoff {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 24px 0;
+  color: #72852e;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+
+.surprise-signoff-line {
+  width: 32px;
+  height: 1px;
+  background: #c9d6b9;
+}
+
+.surprise-cta {
+  width: 100%;
+  min-height: 50px;
+  padding: 14px 20px;
+}
+
+.surprise-cta span {
+  color: #d9f36a;
+}
+
+.surprise-footer {
+  margin: 18px 0 0;
+  color: #89958f;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Entry animations */
+
+@keyframes surprise-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes surprise-rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(15px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Mobile layout */
+
+@media (max-width: 520px) {
+  .surprise-overlay {
+    padding: 14px;
+  }
+
+  .surprise-card {
+    padding: 32px 23px 25px;
+  }
+
+  .surprise-art {
+    height: 120px;
+    margin-bottom: 21px;
+  }
+
+  .surprise-plant {
+    font-size: 58px;
+  }
+
+  .surprise-message {
+    font-size: 15px;
+  }
+
+  .surprise-wish {
+    font-size: 14px;
+  }
+
+  .surprise-signoff {
+    margin: 20px 0;
+  }
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+  .surprise-overlay,
+  .surprise-card {
+    animation: none;
+  }
+}
