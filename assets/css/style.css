@@ -464,7 +464,7 @@ textarea {
 }
 
 .card-kicker {
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 1.8px;
   color: #a4bbb1;
   margin: 22px 0 8px;
@@ -505,7 +505,7 @@ textarea {
 }
 
 .access-row small {
-  font-size: 8px;
+  font-size: 10px;
   color: #a7bbb3;
 }
 
@@ -779,7 +779,7 @@ textarea {
 }
 
 .feature-center b {
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 1px;
   color: white;
 }
